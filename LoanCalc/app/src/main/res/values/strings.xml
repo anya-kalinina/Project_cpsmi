@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Кредитный калькулятор</string>
+    <string name="loan_amount">Сумма кредита: &#160;&#160; </string>
+    <string name="interest_rate">Процентная ставка: &#160;&#160; </string>
+    <string name="loan_period">Период (мес.): &#160;&#160; </string>
+    <string name="loan_button_calculate">Рассчитать</string>
+    <string name="loan_button_grafic">График</string>
+    <string name="monthly_payment">Ежемесячный платеж: &#160;&#160; </string>
+    <string name="overpayments">Переплата: &#160;&#160; </string>
+    <string name="total_payments">Общая сумма долга: &#160;&#160; </string>
+</resources>

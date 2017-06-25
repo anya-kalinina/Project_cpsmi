@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="1"
+    android:stretchColumns="1">
+    tools:context="com.rugmail.kalinina.anya.loancalc.MainActivity">
+
+    <TableRow>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:gravity="right" android:text="@string/loan_amount" />
+        <EditText android:id="@+id/loan_amount" android:layout_height="wrap_content"
+            android:inputType="numberDecimal">
+            <requestFocus></requestFocus>
+        </EditText>
+    </TableRow>
+    <TableRow>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:gravity="right" android:text="@string/interest_rate" />
+        <EditText android:id="@+id/interest_rate" android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+    </TableRow>
+    <TableRow>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:gravity="right" android:text="@string/loan_period" />
+
+        <EditText android:id="@+id/loan_period" android:layout_height="wrap_content"
+            android:inputType="number" />
+    </TableRow>
+    <TableRow>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_span="2" android:onClick="showLoanPayments"
+            android:text="@string/loan_button_calculate" />
+    </TableRow>
+    <TableRow>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_span="2"
+
+            android:text="@string/loan_button_grafic" />
+    </TableRow>
+    <TableRow android:layout_marginTop="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:gravity="right" android:text="@string/monthly_payment" />
+        <TextView android:id="@+id/monthly_payment_result" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:textColor="#ff000000" />
+    </TableRow>
+    <TableRow android:layout_marginTop="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:gravity="right" android:text="@string/overpayments" />
+        <TextView android:id="@+id/overpayments_result" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:textColor="#ff000000" />
+    </TableRow>
+    <TableRow android:layout_marginTop="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:gravity="right" android:text="@string/total_payments" />
+        <TextView android:id="@+id/total_payments_result" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="left"
+            android:textColor="#ff000000" />
+    </TableRow>
+
+</TableLayout>
