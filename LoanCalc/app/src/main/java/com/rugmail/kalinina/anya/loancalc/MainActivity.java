@@ -10,6 +10,10 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
+    //mLoanAmount - сумма кредита, mInterestRate - процентная ставка, mLoanPeriod - период кредитования
+    //mMontlyPaymentResult - результат вычисления мес.платежа ,
+    //mTotalPaymentsResult - результат вычисления общей суммы долга,
+    //mOverpaymentsResult - результат вычисления переплаты
     private EditText mLoanAmount, mInterestRate, mLoanPeriod;
     private TextView mMontlyPaymentResult, mTotalPaymentsResult, mOverpaymentsResult;
 
@@ -27,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // метод, который обрабатывает нажание на кнопку "Рассчитать"
-    public void showLoanPayments(View clickedButton) {
+    public void calculate(View clickedButton) {
 
         //получение параметров из текстового поля и преобразование в число
         double loanAmount = Integer.parseInt(mLoanAmount.getText().toString());

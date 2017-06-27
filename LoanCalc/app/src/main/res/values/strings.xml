@@ -8,4 +8,9 @@
     <string name="monthly_payment">Ежемесячный платеж: &#160;&#160; </string>
     <string name="overpayments">Переплата: &#160;&#160; </string>
     <string name="total_payments">Общая сумма долга: &#160;&#160; </string>
+    <string name="num">№ &#160;&#160; </string>
+    <string name="residual">Остаток</string>
+    <string name="loan">Выплата</string>
+    <string name="rate">Проценты</string>
+    <string name="payment">Платеж</string>
 </resources>
